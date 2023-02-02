@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-spacing: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, #f9c041, #f6d159, #f3e173, #f2f18e, #f3ffa9);
+
+  /* background-image: linear-gradient(to top, #ffc953, #ffbc4e, #ffae4a, #ffa149, #ff9349); */
+  /* padding-bottom: 5px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  background-color: #C58940;
+}
+.container-fluid {
+  width: 90%;
+}
+
+i {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.decorator-elem {
+  font-weight: bold;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.sudoku-solver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.puzzle {
+  width: 540px;
+  height: 540px;
+}
+
+
+
+.puzzle input {
+  text-align: center;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border: 1px #474747 solid;
+  border-radius: 4px;
+}
+
+.odd-section {
+  background-image: linear-gradient(to bottom, #ffb81f, #ffbb2d, #ffbf38, #ffc242, #ffc54c);
+}
+
+.even-section{
+  background-image: linear-gradient(to bottom, #ffcc5f, #ffd16e, #ffd57d, #ffda8b, #ffde99);
+}
+
+.empty-el {
+  color: red;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+}
+
+.solve-button,
+.clear-button,
+.load-button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  cursor: pointer;
+}
+
+.solve-button{
+  background-color: #9ae22d;
+  display: none;
+}
+.clear-button{
+  background-color: #fd2d2d;
+}
+.load-button{
+  background-color: #1c70c0;
+}
+.solve-button > i,
+.clear-button > i,
+.load-button > i {
+  color: black;
+  font-size: 30px;
+}
+
+.clear-button,
+.load-button,
+.solve-button {
+  margin-left: 15px;
+}
+
+.solve-button:hover{
+  background-color: #68ac02;
+}
+.clear-button:hover{
+  background-color: #9b0606;
+}
+.load-button:hover{
+  background-color: #211092;
+  
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+  justify-content: start;
+}
+.rules {
+  max-width: 25vw;
+  margin-top: 8vh;
+  color: white;
+  background-color: #e4a04e;
+  border-radius: 5%;
+  padding: 10px;
+}
+p {
+  margin-bottom: 5px;
+  padding: 0;
+}
+.lives{
+  color: #018f01;
+  font-size: 52px;
+}
+
+.one,.two,.three{
+  color: rgb(226, 37, 37);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: #C58940;
+  padding: 1px;
+}
+
+@keyframes blinking {
+  0% {
+    color: #ff0000;
+  }
+  100% {
+    color: #ff2f48ca;
+    font-size: 45.05px;
+  }
+}
+.blink{
+  width: 200px;
+  height: 200px;
+  animation: blinking 1s infinite ease-in-out;
+}
