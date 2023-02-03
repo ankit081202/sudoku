@@ -24,7 +24,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   background-color: #C58940;
 }
 .container-fluid {
@@ -44,6 +44,7 @@ i {
 }
 
 .wrap {
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -60,8 +61,6 @@ i {
   width: 540px;
   height: 540px;
 }
-
-
 
 .puzzle input {
   text-align: center;
@@ -143,15 +142,17 @@ i {
 .right {
   display: flex;
   flex-direction: column;
-  height: 540px;
+  height: fit-content;
   justify-content: start;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .rules {
-  max-width: 25vw;
+  width: 25vw;
   margin-top: 8vh;
   color: white;
   background-color: #e4a04e;
-  border-radius: 5%;
+  border-radius: 10px;
   padding: 10px;
 }
 p {
@@ -182,11 +183,57 @@ p {
   }
   100% {
     color: #ff2f48ca;
-    font-size: 45.05px;
+    /* font-size: 45.05px; */
   }
 }
 .blink{
   width: 200px;
   height: 200px;
   animation: blinking 1s infinite ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+  .right{
+    margin-top: 1rem;
+  }
+  .wrap{
+    flex-direction: column-reverse;
+  }
+  .rules{
+    width: 55vw;
+  }
+  .sudoku-solver{
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .right{
+    margin-top: 1rem;
+  }
+  .wrap{
+    flex-direction: column-reverse;
+  }
+  .rules{
+    width: 60vw;
+  }
+  .sudoku-solver{
+    margin: 1rem 0;
+  }
+  .puzzle input{
+    width: 45px;
+    height: 45px;
+  }
+  .puzzle{
+    width: 405px;
+    height: 405px;
+  }
+  .lives{
+    font-size: 42px;
+  }
+.solve-button,
+.clear-button,
+.load-button {
+  padding: 7.5px 12.5px;
+}
+  
 }
