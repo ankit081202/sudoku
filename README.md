@@ -9,4 +9,5 @@
 ### STEP 2 : Click on the green button to check if the given input is acceptable.
 ![image](https://user-images.githubusercontent.com/91215261/217871436-7076310a-d059-4290-9cd2-9ddb50faf7cd.png)
 ### STEP 3 : If acceptable, the sudoku gets solved.
-
+### STEP 4 : To refresh, click the red button.
+![image](https://user-images.githubusercontent.com/91215261/217872182-73afdfeb-29a5-4d39-9cef-b55a069e075c.png)
